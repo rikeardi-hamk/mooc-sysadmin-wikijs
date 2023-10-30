@@ -15,8 +15,9 @@ RUN wget https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.g
     rm wiki-js.tar.gz && \
     cd /wiki
 
-RUN mv config.sample.yml config.yml && \
-    npm rebuild sqlite3
+COPY config.yml /wiki/config.yml
+
+RUN npm rebuild sqlite3
 
 USER node
 
