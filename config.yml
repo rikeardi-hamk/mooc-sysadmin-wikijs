@@ -1,0 +1,24 @@
+port: 3000
+
+db:
+  type: sqlite
+  storage: /wiki/database.sqlite
+
+ssl:
+  enabled: false
+
+pool:
+
+bindIP: 0.0.0.0
+
+logLevel: info
+
+logFormat: default
+
+offline: false
+
+ha: false
+
+dataPath: ./data
+
+bodyParserLimit: 5mb
