@@ -10,7 +10,7 @@ RUN mkdir -p /wiki && \
 
 WORKDIR /wiki
 
-RUN wgt https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz && \
+RUN wget https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz && \
     tar xzf wiki-js.tar.gz -C /wiki && \
     rm wiki-js.tar.gz && \
     cd /wiki
